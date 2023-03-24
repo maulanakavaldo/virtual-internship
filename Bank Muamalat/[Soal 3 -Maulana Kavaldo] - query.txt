@@ -1,0 +1,2 @@
+SELECT orders.OrderID, orders.Date, customers.FirstName & " " & customers.LastName AS CustomersName, customers.CustomerEmail, customers.CustomerPhone, customers.CustomerAddress, customers.CustomerCity, customers.CustomerState, customers.CustomerZip, products.ProdName, productcategory.CategoryName, orders.Quantity, products.Price 
+FROM productcategory INNER JOIN (products INNER JOIN (customers INNER JOIN orders ON customers.CustomerID = orders.CustomerID) ON products.ProdNumber = orders.ProdNumber) ON productcategory.CategoryID = products.Category;
