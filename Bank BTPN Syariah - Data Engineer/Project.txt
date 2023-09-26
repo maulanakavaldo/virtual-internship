@@ -1,0 +1,14 @@
+SELECT CLIENTNUM, status, Customer_Age, Gender, Education_Level, Marital_Status, Income_Category, Dependent_count, Card_Category, Months_on_book, Total_Relationship_Count, Months_Inactive_12_mon, Contacts_Count_12_mon, Credit_Limit, Total_Revolving_Bal, Avg_Open_To_Buy, Total_Trans_Amt, Total_Trans_Ct, Avg_Utilization_Ratio
+FROM `virtual-internship-rakamin.Dataset_BTPN.customer_data_history` cdh
+JOIN `virtual-internship-rakamin.Dataset_BTPN.category_db` card ON cdh.card_categoryid = card.id
+JOIN `virtual-internship-rakamin.Dataset_BTPN.education_db` edu ON cdh.Educationid = edu.id
+JOIN `virtual-internship-rakamin.Dataset_BTPN.marital_db` mar ON cdh.Maritalid = mar.id 
+JOIN `virtual-internship-rakamin.Dataset_BTPN.status_db` s ON cdh.idstatus = s.id;
+
+
+SELECT TOP 10 status AS Status, Customer_Age AS Age, [Total] = COUNT(Gender)
+FROM ClientData
+WHERE status LIKE 'Attrited Customer' AND
+Gender LIKE 'M'
+GROUP BY status, Customer_Age
+ORDER BY Total DESC

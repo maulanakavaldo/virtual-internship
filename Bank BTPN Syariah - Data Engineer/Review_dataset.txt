@@ -1,0 +1,49 @@
+Database Customer data history = data historical customer sampai saat ini
+
+Keterangan kolom:
+
+Clientnum : nomor id client
+
+Idstatus   : keterangan status customer
+
+Customer_age : umur customer
+
+Gender : jenis kelamin customer
+
+Dependent count : yang menjadi tanggungan customer
+
+Educationid : keterangan jenjang Pendidikan customer
+
+Maritalid : status pernikahan customer
+
+Income_category : ketgori penghasilan customer
+
+Card_categoryid : jenis kartu kredit customer
+
+Month_on_book : periode berhubungan dengan bank
+
+Relationship_in_count : total product yang dipegang customer
+
+Months_inactive_in_12_month : jumlah bulan tidak aktif selama 12 bulan terakhir
+
+Contacts_Count_12_mon : total dihubungi bank dalam 12 bulan terakhir
+
+Credit limit : limit credit
+
+Total Revolving Balance on the Credit Card : total saldo bergulir pada kartu kredit
+
+Avg_open_to_buy : membeli dengan kartu kredit dalam 12 bulan terakhir
+
+Total_trans_amt : jumlah transaksi
+
+Total_trans_ct : frekuensi transaksi
+
+Avg_utilization_ratio : rata rata rasio penggunaan kartu kredit
+
+Database Category_db = data category dari layanan kartu kredit yang digunakan
+
+Database Education_db = data tingkat Pendidikan customer
+
+Database Marital_db = data status pernikahan customer
+
+Database Status_db = data keterangan status customer existing / attired
