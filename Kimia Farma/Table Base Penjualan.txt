@@ -1,0 +1,3 @@
+SELECT id_invoice, id_barang, nama_barang, jumlah_barang, harga, penjualan.lini
+FROM penjualan INNER JOIN barang
+ON penjualan.id_barang=barang.kode_barang

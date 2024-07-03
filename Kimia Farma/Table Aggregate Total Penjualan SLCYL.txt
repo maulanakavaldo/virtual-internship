@@ -1,0 +1,3 @@
+SELECT penjualan.lini, SUM(penjualan.jumlah_barang*penjualan.harga) AS total
+FROM penjualan
+WHERE penjualan.lini="SLCYL"
